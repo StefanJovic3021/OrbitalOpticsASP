@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Validation\" />
+    <Folder Include="wwwroot\images\" />
+    <Folder Include="wwwroot\temp\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net" Version="0.1.0" />
+    <PackageReference Include="FluentValidation" Version="11.9.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.6" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OrbitalOptics.Application\OrbitalOptics.Application.csproj" />
+    <ProjectReference Include="..\OrbitalOptics.DataAccess\OrbitalOptics.DataAccess.csproj" />
+    <ProjectReference Include="..\OrbitalOptics.Domain\OrbitalOptics.Domain.csproj" />
+    <ProjectReference Include="..\OrbitalOptics.Implementation\OrbitalOptics.Implementation.csproj" />
+  </ItemGroup>
+
+</Project>

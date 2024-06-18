@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Users\\Stefan\\VisualStudioRepos\\OrbitalOptics.API\\wwwroot\\images\\528fcb68-6b83-4b0c-b236-cad47e2ef8e1.png",
+      "PackagePath": "staticwebassets\\images\\528fcb68-6b83-4b0c-b236-cad47e2ef8e1.png"
+    },
+    {
+      "Id": "D:\\Users\\Stefan\\VisualStudioRepos\\OrbitalOptics.API\\wwwroot\\images\\71c94192-1f8a-470d-b232-5015c33d39ed.png",
+      "PackagePath": "staticwebassets\\images\\71c94192-1f8a-470d-b232-5015c33d39ed.png"
+    },
+    {
+      "Id": "D:\\Users\\Stefan\\VisualStudioRepos\\OrbitalOptics.API\\wwwroot\\images\\7ab4ebee-a6fe-4962-9f8f-3ba829081fee.png",
+      "PackagePath": "staticwebassets\\images\\7ab4ebee-a6fe-4962-9f8f-3ba829081fee.png"
+    },
+    {
+      "Id": "D:\\Users\\Stefan\\VisualStudioRepos\\OrbitalOptics.API\\wwwroot\\images\\a87f5491-4dcc-455c-ac35-ab2c1e285588.png",
+      "PackagePath": "staticwebassets\\images\\a87f5491-4dcc-455c-ac35-ab2c1e285588.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.OrbitalOptics.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.OrbitalOptics.API.props",
+      "PackagePath": "build\\OrbitalOptics.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.OrbitalOptics.API.props",
+      "PackagePath": "buildMultiTargeting\\OrbitalOptics.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.OrbitalOptics.API.props",
+      "PackagePath": "buildTransitive\\OrbitalOptics.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
