@@ -1,0 +1,17 @@
+D:\Users\Stefan\VisualStudioRepos\OrbitalOptics.Application\bin\Debug\net8.0\OrbitalOptics.Application.deps.json
+D:\Users\Stefan\VisualStudioRepos\OrbitalOptics.Application\bin\Debug\net8.0\OrbitalOptics.Application.dll
+D:\Users\Stefan\VisualStudioRepos\OrbitalOptics.Application\bin\Debug\net8.0\OrbitalOptics.Application.pdb
+D:\Users\Stefan\VisualStudioRepos\OrbitalOptics.Application\obj\Debug\net8.0\OrbitalOptics.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\Stefan\VisualStudioRepos\OrbitalOptics.Application\obj\Debug\net8.0\OrbitalOptics.Application.AssemblyInfoInputs.cache
+D:\Users\Stefan\VisualStudioRepos\OrbitalOptics.Application\obj\Debug\net8.0\OrbitalOptics.Application.AssemblyInfo.cs
+D:\Users\Stefan\VisualStudioRepos\OrbitalOptics.Application\obj\Debug\net8.0\OrbitalOptics.Application.csproj.CoreCompileInputs.cache
+D:\Users\Stefan\VisualStudioRepos\OrbitalOptics.Application\obj\Debug\net8.0\OrbitalOptics.Application.dll
+D:\Users\Stefan\VisualStudioRepos\OrbitalOptics.Application\obj\Debug\net8.0\refint\OrbitalOptics.Application.dll
+D:\Users\Stefan\VisualStudioRepos\OrbitalOptics.Application\obj\Debug\net8.0\OrbitalOptics.Application.pdb
+D:\Users\Stefan\VisualStudioRepos\OrbitalOptics.Application\obj\Debug\net8.0\ref\OrbitalOptics.Application.dll
+D:\Users\Stefan\VisualStudioRepos\OrbitalOptics.Application\bin\Debug\net8.0\OrbitalOptics.DataAccess.dll
+D:\Users\Stefan\VisualStudioRepos\OrbitalOptics.Application\bin\Debug\net8.0\OrbitalOptics.Domain.dll
+D:\Users\Stefan\VisualStudioRepos\OrbitalOptics.Application\bin\Debug\net8.0\OrbitalOptics.DataAccess.pdb
+D:\Users\Stefan\VisualStudioRepos\OrbitalOptics.Application\bin\Debug\net8.0\OrbitalOptics.Domain.pdb
+D:\Users\Stefan\VisualStudioRepos\OrbitalOptics.Application\obj\Debug\net8.0\OrbitalOptics.Application.csproj.AssemblyReference.cache
+D:\Users\Stefan\VisualStudioRepos\OrbitalOptics.Application\obj\Debug\net8.0\OrbitalO.17BC9FE6.Up2Date
