@@ -6,28 +6,28 @@ using System.Threading.Tasks;
 
 namespace OrbitalOptics.Application.DTO
 {
-    public class CompanyDTO
+    public class CategoryDTO
     {
         public int Id { get; set; }
         public string Name { get; set; }
     }
 
-    public class CreateCompanyDTO
+    public class CreateCategoryDTO
     {
         public string Name { get; set; }
     }
 
-    public class DeleteCompanyDTO
+    public class DeleteCategoryDTO
     {
         public int Id { get; set; }
     }
 
-    public class UpdateCompanyDTO : CompanyDTO
+    public class UpdateCategoryDTO : CategoryDTO
     {
-        // CompanyDTO has both name and id
+        // CategoryDTO has both name and id
     }
 
-    public class GetCompanyDTO : PagedSearchDTO
+    public class GetCategoryDTO : PagedSearchDTO
     {
         public string Keyword { get; set; }
     }
