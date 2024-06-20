@@ -1,7 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using OrbitalOptics.Application.DTO;
-using OrbitalOptics.Application.UseCases.Commands.Companies;
+using OrbitalOptics.Application.UseCases.Commands.Categories;
+using OrbitalOptics.Application.UseCases.Queries.Categories;
 using OrbitalOptics.Application.UseCases.Queries.Companies;
 using OrbitalOptics.Implementation;
 
@@ -11,45 +12,45 @@ namespace OrbitalOptics.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CompaniesController : ControllerBase
+    public class CategoriesController : ControllerBase
     {
         private UseCaseHandler _useCaseHandler;
 
-        public CompaniesController(UseCaseHandler commandHandler)
+        public CategoriesController(UseCaseHandler useCaseHandler)
         {
-            _useCaseHandler = commandHandler;
+            _useCaseHandler = useCaseHandler;
         }
 
-        // POST api/<CompaniesController>
+        // POST api/<CategoriesController>
         [Authorize]
         [HttpPost]
-        public IActionResult Post([FromBody] CreateCompanyDTO dto, [FromServices] ICreateCompanyCommand cmd)
+        public IActionResult Post([FromBody] CreateCategoryDTO dto, [FromServices] ICreateCategoryCommand cmd)
         {
             _useCaseHandler.HandleCommand(cmd, dto);
             return StatusCode(201);
         }
 
-        // DELETE api/<CompaniesController>?Id=<CompanyId>
+        // DELETE api/<CategoriesController>?Id=<CategoryId>
         [Authorize]
         [HttpDelete]
-        public IActionResult Delete([FromQuery] DeleteCompanyDTO dto, [FromServices] IDeleteCompanyCommand cmd)
+        public IActionResult Delete([FromQuery] DeleteCategoryDTO dto, [FromServices] IDeleteCategoryCommand cmd)
         {
             _useCaseHandler.HandleCommand(cmd, dto);
             return StatusCode(204);
         }
 
-        // PUT api/<CompaniesController>
+        // PUT api/<CategoriesController>
         [Authorize]
         [HttpPut]
-        public IActionResult Update([FromBody] UpdateCompanyDTO dto, [FromServices] IUpdateCompanyCommand cmd)
+        public IActionResult Update([FromBody] UpdateCategoryDTO dto, [FromServices] IUpdateCategoryCommand cmd)
         {
             _useCaseHandler.HandleCommand(cmd, dto);
             return StatusCode(204);
         }
 
-        // GET api/<CompaniesController>?Keyword=<CompanyName>[&PerPage=<int>&Page=<int>]
+        // GET api/<CategoriesController>?Keyword=<CategoryName>[&PerPage=<int>&Page=<int>]
         [HttpGet]
-        public IActionResult Get([FromQuery] GetCompanyDTO search, [FromServices] IGetCompaniesQuery query)
+        public IActionResult Get([FromQuery] GetCategoryDTO search, [FromServices] IGetCategoriesQuery query)
             => Ok(_useCaseHandler.HandleQuery(query, search));
     }
 }
