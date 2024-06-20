@@ -2,7 +2,6 @@
 using OrbitalOptics.Application.DTO;
 using OrbitalOptics.Application.UseCases.Commands.Companies;
 using OrbitalOptics.DataAccess;
-using OrbitalOptics.Domain;
 using OrbitalOptics.Implementation.Validators.Companies;
 using System;
 using System.Collections.Generic;
@@ -12,30 +11,24 @@ using System.Threading.Tasks;
 
 namespace OrbitalOptics.Implementation.UseCases.Commands.Companies
 {
-    public class EfCreateCompanyCommand : EfUseCase, ICreateCompanyCommand
+    public class EfDeleteCompanyCommand : EfUseCase, IDeleteCompanyCommand
     {
-        private CreateCompanyDTOValidator _validator;
+        private DeleteCompanyDTOValidator _validator;
 
-        public EfCreateCompanyCommand(OrbitalOpticsContext context, CreateCompanyDTOValidator validator) : base(context)
+        public EfDeleteCompanyCommand(OrbitalOpticsContext context, DeleteCompanyDTOValidator validator) : base(context)
         {
             _validator = validator;
         }
 
-        public int Id => 2;
+        public int Id => 3;
 
-        public string Name => "Create company command";
+        public string Name => "Delete company command";
 
-        public void Execute(CreateCompanyDTO data)
+        public void Execute(DeleteCompanyDTO data)
         {
             _validator.ValidateAndThrow(data);
-
-            Company company = new()
-            {
-                Name = data.Name
-            };
-
-            Context.Companies.Add(company);
-
+            var companyToDelete = Context.Companies.Where(x => x.Id == data.Id).FirstOrDefault();
+            companyToDelete.IsActive = false;
             Context.SaveChanges();
         }
     }

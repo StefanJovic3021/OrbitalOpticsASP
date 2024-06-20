@@ -2,7 +2,6 @@
 using OrbitalOptics.Application.DTO;
 using OrbitalOptics.Application.UseCases.Commands.Companies;
 using OrbitalOptics.DataAccess;
-using OrbitalOptics.Domain;
 using OrbitalOptics.Implementation.Validators.Companies;
 using System;
 using System.Collections.Generic;
@@ -12,30 +11,23 @@ using System.Threading.Tasks;
 
 namespace OrbitalOptics.Implementation.UseCases.Commands.Companies
 {
-    public class EfCreateCompanyCommand : EfUseCase, ICreateCompanyCommand
+    public class EfUpdateCompanyCommand : EfUseCase, IUpdateCompanyCommand
     {
-        private CreateCompanyDTOValidator _validator;
-
-        public EfCreateCompanyCommand(OrbitalOpticsContext context, CreateCompanyDTOValidator validator) : base(context)
+        UpdateCompanyDTOValidator _validator;
+        public EfUpdateCompanyCommand(OrbitalOpticsContext context, UpdateCompanyDTOValidator validator) : base(context)
         {
             _validator = validator;
         }
 
-        public int Id => 2;
+        public int Id => 4;
 
-        public string Name => "Create company command";
+        public string Name => "Update company command";
 
-        public void Execute(CreateCompanyDTO data)
+        public void Execute(UpdateCompanyDTO data)
         {
             _validator.ValidateAndThrow(data);
-
-            Company company = new()
-            {
-                Name = data.Name
-            };
-
-            Context.Companies.Add(company);
-
+            var companyToUpdate = Context.Companies.Where(x => x.Id == data.Id).FirstOrDefault();
+            companyToUpdate.Name = data.Name;
             Context.SaveChanges();
         }
     }

@@ -25,6 +25,6 @@ namespace OrbitalOptics.Implementation
 
         public string Email => "/";
 
-        public IEnumerable<int> AllowedUseCases => new List<int> { 1 };
+        public IEnumerable<int> AllowedUseCases => new List<int> { 1, 5, 9, 13, 17 };
     }
 }

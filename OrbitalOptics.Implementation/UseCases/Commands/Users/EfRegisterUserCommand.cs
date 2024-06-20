@@ -3,7 +3,7 @@ using OrbitalOptics.Application.DTO;
 using OrbitalOptics.Application.UseCases.Commands.Users;
 using OrbitalOptics.DataAccess;
 using OrbitalOptics.Domain;
-using OrbitalOptics.Implementation.Validators;
+using OrbitalOptics.Implementation.Validators.Users;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -54,7 +54,10 @@ namespace OrbitalOptics.Implementation.UseCases.Commands.Users
                 UseCases = new List<UserUseCase>()
                 {
                     // Default use cases for new user
-                    new UserUseCase { UseCaseId = 2 }
+                    new UserUseCase { UseCaseId = 5 },
+                    new UserUseCase { UseCaseId = 9 },
+                    new UserUseCase { UseCaseId = 13 },
+                    new UserUseCase { UseCaseId = 17 }
                 }
             };
 
