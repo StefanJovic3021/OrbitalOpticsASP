@@ -1,8 +1,24 @@
 {
   "Files": [
     {
+      "Id": "D:\\Users\\Stefan\\VisualStudioRepos\\OrbitalOptics.API\\wwwroot\\images\\094e81b4-5b0f-40cb-8282-c9dcdaae493e.png",
+      "PackagePath": "staticwebassets\\images\\094e81b4-5b0f-40cb-8282-c9dcdaae493e.png"
+    },
+    {
+      "Id": "D:\\Users\\Stefan\\VisualStudioRepos\\OrbitalOptics.API\\wwwroot\\images\\28292f5d-e601-4c2a-af00-14c8b79a9e51.png",
+      "PackagePath": "staticwebassets\\images\\28292f5d-e601-4c2a-af00-14c8b79a9e51.png"
+    },
+    {
       "Id": "D:\\Users\\Stefan\\VisualStudioRepos\\OrbitalOptics.API\\wwwroot\\images\\528fcb68-6b83-4b0c-b236-cad47e2ef8e1.png",
       "PackagePath": "staticwebassets\\images\\528fcb68-6b83-4b0c-b236-cad47e2ef8e1.png"
+    },
+    {
+      "Id": "D:\\Users\\Stefan\\VisualStudioRepos\\OrbitalOptics.API\\wwwroot\\images\\5d0ffb6a-b364-4000-8e8c-1b00300218bd.png",
+      "PackagePath": "staticwebassets\\images\\5d0ffb6a-b364-4000-8e8c-1b00300218bd.png"
+    },
+    {
+      "Id": "D:\\Users\\Stefan\\VisualStudioRepos\\OrbitalOptics.API\\wwwroot\\images\\68bbdd83-b467-47e5-af32-ef586f85f8da.PNG",
+      "PackagePath": "staticwebassets\\images\\68bbdd83-b467-47e5-af32-ef586f85f8da.PNG"
     },
     {
       "Id": "D:\\Users\\Stefan\\VisualStudioRepos\\OrbitalOptics.API\\wwwroot\\images\\71c94192-1f8a-470d-b232-5015c33d39ed.png",
@@ -11,6 +27,10 @@
     {
       "Id": "D:\\Users\\Stefan\\VisualStudioRepos\\OrbitalOptics.API\\wwwroot\\images\\7ab4ebee-a6fe-4962-9f8f-3ba829081fee.png",
       "PackagePath": "staticwebassets\\images\\7ab4ebee-a6fe-4962-9f8f-3ba829081fee.png"
+    },
+    {
+      "Id": "D:\\Users\\Stefan\\VisualStudioRepos\\OrbitalOptics.API\\wwwroot\\images\\91162cb4-ee55-4bb8-aa69-2918e73412fc.png",
+      "PackagePath": "staticwebassets\\images\\91162cb4-ee55-4bb8-aa69-2918e73412fc.png"
     },
     {
       "Id": "D:\\Users\\Stefan\\VisualStudioRepos\\OrbitalOptics.API\\wwwroot\\images\\a87f5491-4dcc-455c-ac35-ab2c1e285588.png",
